@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Autos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AutoMundo</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Ventas.html">Autos</a></li>
+            <li><a href="Ventas.html">Ofertas</a></li>
+            
+          </ul>
+          <button class="nav-btn">Iniciar Sesión</button>
+        </nav>
+      </header>
+    <!-- Sección de Autos -->
+     <main>
+    <section class="autos">
+        <h2>Autos Disponibles</h2>
+        <div class="autos-container">
+            <!-- Lista de Autos -->
+            <div class="auto-item">
+                <img src="images (1).jpg" alt="Ford Mustang GT">
+                <div class="auto-info">
+                    <h3>Ford Mustang GT</h3>
+                    <p>Motor: V8 5.0L</p>
+                    <p>Potencia: 450 hp</p>
+                    <p>Precio: $43,000</p>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <button class="comprar-btn" onclick="agregarAlCarrito('Ford Mustang GT', 43000)">Comprar</button>
+                </div>
+            </div>
+            <div class="auto-item">
+                <img src="NAZ_231d75746a0b422f94123eee06fa6b7e.jpg" alt="Toyota Camry">
+                <div class="auto-info">
+                    <h3>Toyota Camry</h3>
+                    <p>Motor: 2.5L 4 cilindros</p>
+                    <p>Potencia: 203 hp</p>
+                    <p>Precio: $25,000</p>
+                    <div class="estrellas">⭐⭐⭐⭐</div>
+                    <button class="comprar-btn" onclick="agregarAlCarrito('Toyota Camry', 25000)">Comprar</button>
+                </div>
+            </div>
+           
+    </main>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Acerca de Nosotros</h3>
+            <p>AutoMundo es tu portal confiable para la compra y venta de automóviles. Ofrecemos una experiencia de usuario excepcional, garantizando que cada cliente encuentre el auto perfecto que se ajuste a sus necesidades.</p>
+          </div>
+          <div class="footer-section links">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="Ventas.htmls">Autos</a></li>
+              <li><a href="Ventas.html">Ofertas</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contacto</h3>
+            <p>Email: contacto@automundo.com</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+          </div>
+          <div class="footer-section social">
+            <h3>Redes Sociales</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 AutoMundo. Todos los derechos reservados.</p>
+          <p>&copy; Giordano Martin Tasayco Magalanes U22216715</p>
+        </div>
+      </footer>
+    <script>
+        function agregarAlCarrito(nombre, precio) {
+            alert(`Has agregado ${nombre} al carrito por $${precio}.`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  display: -webkit-box; /* Antiguo prefijo de Flexbox */
+  display: -ms-flexbox; /* Antiguo prefijo de Flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: linear-gradient(to right, #333, #444);
+  background: -webkit-linear-gradient(left, #333, #444); /* Prefijo para WebKit */
+  background: -moz-linear-gradient(left, #333, #444); /* Prefijo para Firefox */
+  background: -o-linear-gradient(left, #333, #444); /* Prefijo para Opera */
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navegación */
+nav {
+  display: -webkit-box; /* Antiguo prefijo de Flexbox */
+  display: -ms-flexbox; /* Antiguo prefijo de Flexbox */
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: -webkit-box; /* Antiguo prefijo de Flexbox */
+  display: -ms-flexbox; /* Antiguo prefijo de Flexbox */
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease; /* Prefijo para WebKit */
+}
+
+.nav-links li a:hover {
+  color: #ff9800;
+}
+
+.nav-btn {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease; /* Prefijo para WebKit */
+}
+
+.nav-btn:hover {
+  background-color: #e68900;
+}
+
+/* Hero */
+.hero {
+  display: -webkit-box; /* Antiguo prefijo de Flexbox */
+  display: -ms-flexbox; /* Antiguo prefijo de Flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  background-color: #fff;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease; /* Prefijo para WebKit */
+}
+
+.cta-btn:hover {
+  background-color: #e68900;
+}
+
+.hero-image img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Inicio */
+.inicio {
+  background-color: #f8f8f8;
+  padding: 80px 10%;
+  text-align: center;
+  border-top: 5px solid #ff9800; /* Línea superior para un toque elegante */
+}
+
+.inicio-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffffff; /* Fondo blanco para resaltar el contenido */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.inicio-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600; /* Negrita para un título más fuerte */
+}
+
+.inicio-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.inicio-content ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  text-align: left; /* Alineación a la izquierda para la lista */
+  display: inline-block;
+}
+
+.inicio-content ul li {
+  margin: 10px 0;
+  font-size: 16px; /* Tamaño de fuente más pequeño */
+}
+
+.inicio-content .cta-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500; /* Peso de fuente semi-negrita */
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  -webkit-transition: background-color 0.3s ease, transform 0.3s ease; /* Prefijo para WebKit */
+}
+
+.inicio-content .cta-btn:hover {
+  background-color: #e68900;
+  transform: translateY(-2px); /* Elevación en hover para efecto visual */
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto; /* Centrar el carrusel */
+  overflow: hidden; /* Ocultar imágenes fuera del contenedor */
+}
+
+.carrusel-container {
+  position: relative;
+}
+
+.carrusel-images {
+  display: -webkit-box; /* Antiguo prefijo de Flexbox */
+  display: -ms-flexbox; /* Antiguo prefijo de Flexbox */
+  display: flex;
+  transition: transform 0.5s ease; /* Transición suave para el movimiento */
+}
+
+.carrusel-item {
+  position: relative; /* Posicionar el contenedor de la imagen */
+  flex: 0 0 100%; /* Cada item ocupa el 100% del espacio */
+}
+
+.carrusel-images img {
+  width: 100%;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.carrusel-images img.active {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa para la imagen activa */
+}
+
+.carrusel-images img:not(.active) {
+  filter: brightness(0.5); /* Oscurecer las imágenes no activas */
+  opacity: 0.6; /* Reducir la opacidad de las imágenes no activas */
+  transform: scale(0.95); /* Reducir ligeramente el tamaño */
+  transition: filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+}
+
+.description {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+  width: 90%; /* Ajustar el ancho de la descripción */
+  text-align: center;
+}
+
+.carrusel-item:hover .description {
+  opacity: 1; /* Mostrar la descripción al pasar el mouse */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease; /* Prefijo para WebKit */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Reseñas */
+.reseñas {
+  padding: 50px 20px; /* Espaciado alrededor de la sección */
+  text-align: center; /* Centrar el texto del encabezado */
+  background-color: #f9f9f9; /* Color de fondo claro */
+}
+
+.reseñas h2 {
+  margin-bottom: 30px; /* Espaciado debajo del título */
+  font-size: 2.5em; /* Tamaño del texto del título */
+  color: #333; /* Color del título */
+}
+
+.reseñas-container {
+  display: flex; /* Usar flexbox para alinear los elementos */
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  flex-wrap: wrap; /* Permitir que se ajusten en diferentes filas */
+  gap: 20px; /* Espaciado entre las tarjetas */
+}
+
+.reseña-item {
+  background-color: white; /* Fondo blanco para cada tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 10px; /* Margen alrededor de las tarjetas */
+  padding: 20px; /* Espaciado interno para el contenido */
+  width: 300px; /* Ancho fijo para las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  overflow: hidden; /* Asegurar que el contenido no se desborde */
+}
+
+.reseña-item:hover {
+  transform: translateY(-5px); /* Elevar la tarjeta al pasar el mouse */
+}
+
+.reseña-item img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+  margin-bottom: 15px; /* Espaciado debajo de la imagen */
+}
+
+.reseña-content {
+  padding: 15px; /* Espaciado interno para el contenido */
+}
+
+.reseña-content h3 {
+  margin: 0 0 10px; /* Margen en el encabezado de la reseña */
+  font-size: 1.5em; /* Tamaño de fuente del nombre del auto */
+  color: #333; /* Color del nombre del auto */
+}
+
+.reseña-content p {
+  font-size: 1em; /* Tamaño de fuente del texto */
+  color: #666; /* Color del texto de la descripción */
+  line-height: 1.5; /* Altura de línea para mejor legibilidad */
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Color de fondo oscuro */
+  color: white; /* Color del texto */
+  padding: 40px 10%; /* Espaciado superior e inferior, y laterales */
+  margin-top: 20px; /* Espaciado superior para separar del contenido anterior */
+}
+
+.footer-content {
+  display: flex; /* Usar flexbox para alinear el contenido */
+  justify-content: space-between; /* Espaciar los elementos */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.footer-section {
+  flex: 1; /* Cada sección ocupa el mismo espacio */
+  min-width: 200px; /* Ancho mínimo para cada sección */
+  margin-right: 20px; /* Margen derecho entre secciones */
+}
+
+.footer-section h3 {
+  margin-bottom: 15px; /* Espaciado debajo del encabezado */
+  color: #ff9800; /* Color del encabezado */
+}
+
+.footer-section p {
+  margin-bottom: 10px; /* Espaciado debajo del párrafo */
+  color: #ccc; /* Color del texto */
+}
+
+.footer-section ul {
+  list-style: none; /* Eliminar viñetas */
+  padding: 0; /* Eliminar padding */
+}
+
+.footer-section ul li {
+  margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.footer-section a {
+  color: white; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.footer-section a:hover {
+  color: #ff9800; /* Color al pasar el mouse */
+}
+
+.footer-bottom {
+  text-align: center; /* Centrar el texto */
+  margin-top: 20px; /* Espaciado superior */
+  font-size: 14px; /* Tamaño del texto */
+  color: #ccc; /* Color del texto */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+      align-items: flex-start; /* Alinear elementos al inicio */
+  }
+
+  .hero {
+      flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+      padding: 50px 5%; /* Reduce el padding */
+  }
+
+  .hero-content {
+      max-width: 100%; /* Aumentar el ancho para pantallas pequeñas */
+      text-align: center; /* Centrar el texto */
+  }
+
+  .carrusel {
+      max-width: 100%; /* Aumentar el ancho del carrusel para pantallas pequeñas */
+  }
+
+  .reseñas-container {
+      flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+      align-items: center; /* Centrar elementos en el contenedor */
+  }
+}
+
+/* Autos */
+.autos {
+  padding: 40px 20px; /* Espaciado alrededor de la sección */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  text-align: center; /* Centrar el texto */
+}
+
+.autos h2 {
+  font-size: 2.5em; /* Tamaño de fuente para el encabezado */
+  color: #333; /* Color del encabezado */
+  margin-bottom: 30px; /* Espaciado debajo del encabezado */
+}
+
+/* Contenedor de autos */
+.autos-container {
+  display: grid; /* Usar grid para el diseño */
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+  gap: 20px; /* Espaciado entre los elementos */
+}
+
+/* Item de auto */
+.auto-item {
+  background-color: #fff; /* Fondo blanco para cada auto */
+  border: 1px solid #ccc; /* Borde sutil alrededor de cada auto */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+  text-align: left; /* Alinear el texto a la izquierda */
+  padding: 15px; /* Espaciado interno */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.auto-item:hover {
+  transform: translateY(-5px); /* Elevar el item al pasar el mouse */
+}
+
+/* Imagen del auto */
+.auto-item img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+  margin-bottom: 15px; /* Espaciado debajo de la imagen */
+}
+
+/* Información del auto */
+.auto-info h3 {
+  font-size: 1.5em; /* Tamaño del título del auto */
+  color: #333; /* Color del título */
+  margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+.auto-info p {
+  margin: 5px 0; /* Margen entre párrafos */
+  font-size: 1em; /* Tamaño de fuente del texto */
+  color: #555; /* Color del texto de la información */
+}
+
+/* Botón de comprar */
+.comprar-btn {
+  padding: 10px 15px; /* Espaciado del botón */
+  background-color: #007BFF; /* Color del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar */
+  transition: background-color 0.3s; /* Animación del botón */
+}
+
+.comprar-btn:hover {
+  background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 800px) {
+  .autos-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 500px) {
+  .autos-container {
+      grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+  }
+}
+

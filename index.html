@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoMundo - Encuentra tu auto ideal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">AutoMundo</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#autos">Autos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        
+      </ul>
+      <button class="nav-btn">Iniciar Sesión</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>¡Encuentra el Auto Perfecto para Ti!</h1>
+      <p>Explora nuestra selección de autos nuevos y usados de las mejores marcas. Compara modelos, precios y encuentra las mejores ofertas. ¡Empieza tu búsqueda ahora!</p>
+      <button class="cta-btn">Explorar Autos</button>
+    </div>
+    <div class="hero-image">
+      <img src="rb_66815.png" alt="Autos de lujo y eficiencia">
+    </div>
+  </section>
+
+  <section class="inicio" id="inicio">
+    <div class="inicio-content">
+      <h2>Bienvenido a AutoMundo</h2>
+      <p>En AutoMundo, hacemos que encontrar el auto de tus sueños sea una experiencia emocionante y fácil. Con nuestra amplia gama de vehículos y comparativas de modelos, te ayudamos a tomar decisiones informadas.</p>
+      <ul>
+        <li><strong>Variedad:</strong> Accede a un catálogo completo de automóviles nuevos y usados.</li>
+        <li><strong>Asesoría Personalizada:</strong> Nuestros especialistas están aquí para ayudarte.</li>
+        <li><strong>Financiamiento Flexible:</strong> Opciones adaptadas a tus posibilidades.</li>
+        <li><strong>Ofertas Exclusivas:</strong> Promociones en vehículos seleccionados.</li>
+      </ul>
+      <a href= "Ventas.html" class="cta-btn">Ver Autos Disponibles</a>
+      <!-- <button class="cta-btn" src="Ventas.html">Ver Autos Disponibles</button> -->
+    </div>
+  </section>
+
+  <section class="carrusel">
+    <div class="carrusel-container">
+        <div class="carrusel-images">
+            <div class="carrusel-item">
+                <img src="2021-Honda-Accord-Hybrid-1-1.avif" alt="Auto 1" class="active">
+                <div class="description">Este  Honda Accord Hybrid, conocido por su eficiencia y diseño moderno.</div>
+            </div>
+            <div class="carrusel-item">
+                <img src="1920x900_006-1.webp" alt="Auto 2">
+                <div class="description">Este Honda CR-V, perfecto para la ciudad y viajes familiares.</div>
+            </div>
+            <div class="carrusel-item">
+                <img src="2025-z06-masthead-01.avif" alt="Auto 3">
+                <div class="description">Chevrolet Corvette, un deportivo con gran rendimiento.</div>
+            </div>
+            <div class="carrusel-item">
+                <img src="porsche-taycan-turbo-s-keramiky-pano.jpg" alt="Auto 4">
+                <div class="description">Porsche Taycan, con tecnología avanzada y comodidad.</div>
+            </div>
+        </div>
+        <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+        <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+    </div>
+</section>
+
+<section class="reseñas">
+    <h2>Reseñas de Autos</h2>
+    <div class="reseñas-container">
+        <div class="reseña-item">
+            <img src="ford-negro.png" alt="Ford Mustang GT">
+            <div class="reseña-content">
+                <h3>Ford Mustang GT</h3>
+                <p>El Ford Mustang GT combina un motor V8 potente con un diseño icónico. Ofrece un rendimiento impresionante y una experiencia de conducción emocionante, perfecto para los amantes de los deportivos.</p>
+            </div>
+        </div>
+        <div class="reseña-item">
+            <img src="toyota-camry.png" alt="Toyota Camry">
+            <div class="reseña-content">
+                <h3>Toyota Camry</h3>
+                <p>El Toyota Camry es conocido por su fiabilidad y eficiencia de combustible. Este sedán cómodo y espacioso es ideal para familias y ofrece una experiencia de manejo suave.</p>
+            </div>
+        </div>
+        <div class="reseña-item">
+            <img src="15099-2023-audi-a4.webp" alt="Audi A4">
+            <div class="reseña-content">
+                <h3>Audi A4</h3>
+                <p>El Audi A4 destaca por su lujo y tecnología avanzada. Ofrece un interior refinado, un manejo ágil y opciones de motorización que equilibran potencia y eficiencia.</p>
+            </div>
+        </div>
+        <div class="reseña-item">
+            <img src="volkswagen-tiguan-allspace.png" alt="Volkswagen Tiguan">
+            <div class="reseña-content">
+                <h3>Volkswagen Tiguan</h3>
+                <p>El Volkswagen Tiguan es un SUV compacto que combina estilo y versatilidad. Ofrece un interior espacioso y características de seguridad avanzadas, ideal para aventuras familiares.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Acerca de Nosotros</h3>
+        <p>AutoMundo es tu portal confiable para la compra y venta de automóviles. Ofrecemos una experiencia de usuario excepcional, garantizando que cada cliente encuentre el auto perfecto que se ajuste a sus necesidades.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Enlaces Útiles</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#autos">Autos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contacto</h3>
+        <p>Email: contacto@automundo.com</p>
+        <p>Teléfono: +123 456 7890</p>
+        <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+      </div>
+      <div class="footer-section social">
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 AutoMundo. Todos los derechos reservados.</p>
+      <p>&copy; Giordano Martin Tasayco Magalanes U22216715</p>
+    </div>
+  </footer>
+  <script>
+    let index = 0;
+    
+    function cambiarImagen(n) {
+        const images = document.querySelectorAll('.carrusel-images img');
+        images[index].classList.remove('active'); // Remover la clase activa de la imagen actual
+    
+        index += n;
+    
+        if (index < 0) {
+            index = images.length - 1; // Volver al último
+        } else if (index >= images.length) {
+            index = 0; // Volver al primero
+        }
+    
+        images[index].classList.add('active'); // Agregar la clase activa a la nueva imagen
+    
+        // Mover el carrusel
+        const offset = -index * 100;
+        document.querySelector('.carrusel-images').style.transform = `translateX(${offset}%)`;
+    
+        // Actualizar la opacidad de las descripciones
+        const descriptions = document.querySelectorAll('.description');
+        descriptions.forEach((desc, i) => {
+            desc.style.opacity = (i === index) ? '1' : '0'; // Mostrar solo la descripción activa
+        });
+    }
+    </script>
+    
+    
+</body>
+</html>
